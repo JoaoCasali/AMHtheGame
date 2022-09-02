@@ -1,5 +1,5 @@
 {
-    "activeFile": "C:/Users/Dudu/Desktop/game assets/map projects/test.tmx",
+    "activeFile": "C:/Users/Dudu/Documents/GitHub/AMHtheGame/data/tmx/map1.tmx",
     "expandedProjectPaths": [
     ],
     "fileStates": {
@@ -20,11 +20,23 @@
         },
         "C:/Users/Dudu/Desktop/game assets/tilesets/AMH_details.tsx": {
             "scaleInDock": 1,
-            "scaleInEditor": 1
+            "scaleInEditor": 1.5
         },
         "C:/Users/Dudu/Desktop/game assets/tilesets/AMH_floor.tsx": {
             "scaleInDock": 0.75,
-            "scaleInEditor": 4
+            "scaleInEditor": 1.5
+        },
+        "C:/Users/Dudu/Desktop/game assets/tilesets/AMH_objects.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1.5
+        },
+        "C:/Users/Dudu/Documents/GitHub/AMHtheGame/data/tmx/map1.tmx": {
+            "scale": 0.33,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 1012.121212121212,
+                "y": 1012.121212121212
+            }
         }
     },
     "last.exportedFilePath": "C:/Users/Dudu/Documents/GitHub/AMHtheGame/graphics/map/lvl1",
@@ -32,14 +44,17 @@
     "map.lastUsedExportFilter": "CSV files (*.csv)",
     "map.lastUsedFormat": "tmx",
     "openFiles": [
-        "C:/Users/Dudu/Desktop/game assets/map projects/test.tmx",
-        "C:/Users/Dudu/Desktop/game assets/tilesets/AMH_floor.tsx",
-        "C:/Users/Dudu/Desktop/game assets/tilesets/AMH_details.tsx"
+        "C:/Users/Dudu/Documents/GitHub/AMHtheGame/data/tmx/map1.tmx",
+        "C:/Users/Dudu/Desktop/game assets/tilesets/AMH_details.tsx",
+        "C:/Users/Dudu/Desktop/game assets/tilesets/AMH_objects.tsx",
+        "C:/Users/Dudu/Desktop/game assets/tilesets/AMH_floor.tsx"
     ],
     "project": "untitled.tiled-project",
     "recentFiles": [
         "C:/Users/Dudu/Desktop/game assets/tilesets/AMH_floor.tsx",
+        "C:/Users/Dudu/Desktop/game assets/tilesets/AMH_objects.tsx",
         "C:/Users/Dudu/Desktop/game assets/tilesets/AMH_details.tsx",
+        "C:/Users/Dudu/Documents/GitHub/AMHtheGame/data/tmx/map1.tmx",
         "C:/Users/Dudu/Desktop/game assets/map projects/test.tmx",
         "C:/Users/Dudu/Desktop/game assets/AMH_floor.tsx"
     ],

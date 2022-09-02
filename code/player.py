@@ -14,7 +14,7 @@ class Player(pygame.sprite.Sprite):
 
         self.image = pygame.image.load('graphics/player/right/right_0.png').convert_alpha()
         self.rect = self.image.get_rect(topleft = pos)
-        self.hitbox = self.rect.inflate(0, -10)
+        self.hitbox = self.rect.inflate(-30, -20)
 
         # moviment variables
         self.direction = pygame.math.Vector2()

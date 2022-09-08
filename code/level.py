@@ -1,8 +1,10 @@
 import pygame
+from support import import_csv_layout, import_folder
 from settings import *
 from tile import Tile
 from player import Player
 from debug import debug
+from random import choice
 
 class Level():
     def __init__(self) -> None:
@@ -15,14 +17,37 @@ class Level():
         self.create_map()
 
     def create_map(self):
-        # for row_index, row in enumerate(WORLD_MAP):
-        #     for col_index, col in enumerate(row):
-        #         x = col_index * TILESIZE
-        #         y = row_index * TILESIZE
-        #         if col == 'x': 
-        #             Tile((x,y), [self.visible_sprites, self.obstacle_sprites])
-        #         if col == 'p':
-        #             self.player = Player((x,y), [self.visible_sprites], self.obstacle_sprites)
+        layouts = {
+            'boundary': import_csv_layout('graphics/map/lvl1/map._floorBlocks.csv'),
+            'bushes': import_csv_layout('graphics/map/lvl1/map._bushes.csv'),
+            'objects': import_csv_layout('graphics/map/lvl1/map._objects.csv')
+        }
+        graphics = {
+            'bushes': import_folder('graphics/bushes'),
+            'objects': import_folder('graphics/objects')
+        }
+        # walk in the layers of the map
+        # style = type of layer - layout = where the tile stay
+        for style, layout in layouts.items():
+            for row_index, row in enumerate(layout):
+                for col_index, col in enumerate(row):
+                    if col != '-1':
+                        # find the tiles' position
+                        x = col_index * TILESIZE
+                        y = row_index * TILESIZE
+
+                        # delimits where the player can pass
+                        if style == 'boundary':
+                            Tile((x, y), [self.obstacle_sprites], 'invisible')
+                        # details that the player can walk on top
+                        if style == 'bushes':
+                            random_bush_image = choice(graphics['bushes'])
+                            Tile((x, y), [self.visible_sprites], 'bush', random_bush_image)
+                        # objects that the player can't pass
+                        if style == 'objects':
+                            surf = graphics['objects'][int(col)]
+                            Tile((x, y), [self.visible_sprites, self.obstacle_sprites], 'object', surf)
+
         self.player = Player((400,300), [self.visible_sprites], self.obstacle_sprites)
     def run(self):
         # update and draw the game

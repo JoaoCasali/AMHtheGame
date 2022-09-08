@@ -20,7 +20,8 @@ class Level():
         layouts = {
             'boundary': import_csv_layout('graphics/map/lvl1/map._floorBlocks.csv'),
             'bushes': import_csv_layout('graphics/map/lvl1/map._bushes.csv'),
-            'objects': import_csv_layout('graphics/map/lvl1/map._objects.csv')
+            'objects': import_csv_layout('graphics/map/lvl1/map._objects.csv'),
+            'entities': import_csv_layout('graphics/map/lvl1/map._antities.csv')
         }
         graphics = {
             'bushes': import_folder('graphics/bushes'),
@@ -48,7 +49,9 @@ class Level():
                             surf = graphics['objects'][int(col)]
                             Tile((x, y), [self.visible_sprites, self.obstacle_sprites], 'object', surf)
 
-        self.player = Player((400,300), [self.visible_sprites], self.obstacle_sprites)
+                        if style == 'entities':
+                            self.player = Player((x,y), [self.visible_sprites], self.obstacle_sprites)
+
     def run(self):
         # update and draw the game
         self.visible_sprites.Custom_draw(self.player)

@@ -6,7 +6,7 @@ class Player(pygame.sprite.Sprite):
     def __init__(self, pos, groups, obstacle_sprites) -> None:
         super().__init__(groups)
         # Import animations
-        self.import_plater_assets()
+        self.import_player_assets()
         self.status = 'down' # tell what the player are doing
         self.frame_index = 0
         self.animations_speed = 0.15
@@ -24,7 +24,7 @@ class Player(pygame.sprite.Sprite):
         # sprites which the player can collide
         self.obstacle_sprites = obstacle_sprites
 
-    def import_plater_assets(self):
+    def import_player_assets(self):
         character_path = "graphics/player/"
         self.animations = {'up': [], 'down': [], 'left': [], 'right': [],
                            'up_idle': [], 'down_idle': [], 'left_idle': [], 'right_idle': []}

@@ -3,7 +3,7 @@ A top-down game based in old Zelda's game, Stardew Valley and RPG games in gener
 Made by python
 
 ## versions
-- python: 3.8.8
+- python: 3.10.7
 - pygame: 2.1.2
 
 ## sprites made by:

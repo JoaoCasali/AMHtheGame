@@ -1,5 +1,5 @@
 {
-    "activeFile": "C:/Users/Dudu/Documents/GitHub/AMHtheGame/data/tmx/map1.tmx",
+    "activeFile": "C:/Users/Dudu/Documents/GitHub/AMHtheGame/data/tmx/map2.tmx",
     "expandedProjectPaths": [
     ],
     "file.lastUsedOpenFilter": "All Files (*)",
@@ -44,6 +44,14 @@
                 "y": 763.6363636363635
             }
         },
+        "C:/Users/Dudu/Documents/GitHub/AMHtheGame/data/tmx/map2.tmx": {
+            "scale": 1,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 1840,
+                "y": 167
+            }
+        },
         "C:/Users/Dudu/Documents/GitHub/AMHtheGame/data/tsx/AHM_bigObjects.tsx": {
             "dynamicWrapping": true,
             "scaleInDock": 1,
@@ -84,11 +92,25 @@
             "scaleInEditor": 1
         }
     },
+    "last.exportedFilePath": "C:/Users/Dudu/Documents/GitHub/AMHtheGame/graphics/map/lvl2",
+    "last.imagePath": "C:/Users/Dudu/Documents/GitHub/AMHtheGame/graphics/bushes",
+    "map.lastUsedExportFilter": "All Files (*)",
     "openFiles": [
-        "C:/Users/Dudu/Documents/GitHub/AMHtheGame/data/tmx/map1.tmx"
+        "C:/Users/Dudu/Documents/GitHub/AMHtheGame/data/tmx/map2.tmx",
+        "C:/Users/Dudu/Documents/GitHub/AMHtheGame/data/tsx/AHM_objects.tsx",
+        "C:/Users/Dudu/Documents/GitHub/AMHtheGame/data/tsx/AMH_floor.tsx",
+        "C:/Users/Dudu/Documents/GitHub/AMHtheGame/data/tsx/AMH_bushes.tsx",
+        "C:/Users/Dudu/Documents/GitHub/AMHtheGame/data/tsx/AMH_details.tsx"
     ],
     "project": "",
     "recentFiles": [
+        "C:/Users/Dudu/Documents/GitHub/AMHtheGame/data/tsx/AMH_details.tsx",
+        "C:/Users/Dudu/Documents/GitHub/AMHtheGame/data/tsx/AMH_bushes.tsx",
+        "C:/Users/Dudu/Documents/GitHub/AMHtheGame/data/tsx/AMH_floor.tsx",
+        "C:/Users/Dudu/Documents/GitHub/AMHtheGame/data/tsx/AHM_objects.tsx",
+        "C:/Users/Dudu/Documents/GitHub/AMHtheGame/data/tmx/map2.tmx",
         "C:/Users/Dudu/Documents/GitHub/AMHtheGame/data/tmx/map1.tmx"
-    ]
+    ],
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.type": 1
 }

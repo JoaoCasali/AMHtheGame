@@ -6,7 +6,7 @@ from player import Player
 from debug import debug
 
 class Level():
-    def __init__(self, selected_map = 2) -> None:
+    def __init__(self, selected_map = 1) -> None:
         # get the display surface
         self.display_surface = pygame.display.get_surface()
         self.selected_map = selected_map
